@@ -1,0 +1,31 @@
+.blueButton{
+  background-color: rgb(97, 174, 233);
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+}
+
+.blueButton a{
+color: white;
+text-decoration: none;
+}
+
+.blueButton a:hover, .whiteButton a:hover{
+text-decoration: underline;
+}
+
+.whiteButton{
+  background-color: white;
+  padding: 7px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: 1px solid grey;
+}
+
+.whiteButton a{
+color: grey;
+text-decoration: none;
+}

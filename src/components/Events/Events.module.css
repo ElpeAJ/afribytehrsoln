@@ -1,0 +1,52 @@
+.event{
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 7px;
+  /* width: 45%; */
+  padding: 15px;
+}
+
+.eventtextdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.7;
+  margin: 5px 0;
+  /* background-color: aqua; */
+}
+
+.eventheading{
+  opacity: 0.8;
+  font-size: 1.3rem;
+  margin: 12px 0;
+}
+
+.gridbox{
+  display: grid;
+  gap: 1.5rem; 
+}
+
+.eventitems{
+  display: grid;
+  grid-template-columns: 2fr 6fr 2fr;
+
+}
+
+.infotext{
+  /* display: grid;
+  grid-template-rows: 2(1fr); */
+  opacity: 0.7;
+}
+
+.name{
+  font-weight: 600;
+}
+
+.eventitems img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* .time{
+  align-content: flex-end;
+} */

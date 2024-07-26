@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 0.5fr 6.5fr 3fr;
+  align-items: center;
+  background-color: rgb(223, 240, 255);
+  border-radius: 10px;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.info{
+  font-size: 2rem;
+  color: rgb(97, 174, 233);
+}
+
+.continue h4{
+  opacity: 0.9;
+}
+
+.continue p{
+  opacity: 0.7;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.grid div{
+  margin: 0 auto;
+}
+
+.buttondiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}

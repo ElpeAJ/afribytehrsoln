@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.splitscreen{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1.7fr 8.3fr;
+}
+
+.main{
+  margin: 10px;
+  border: 10px;
+  /* padding: 10px; */
+}
+
+.maincontent{
+  margin: 0 1.5rem;
+  /* position: fixed;
+  width: 78%; */
+}

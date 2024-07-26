@@ -1,0 +1,29 @@
+.caption{
+  margin: 2rem 0 1rem;
+  opacity: 0.8;
+}
+
+.caption h1{
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.caption p{
+  font-size: 0.7rem;
+}
+
+.objectentrydiv{
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  opacity: 0.8;
+  margin: 1.2rem 0 ;
+}
+
+.objectentrydiv > :first-child {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.objectentrydiv > :nth-child(2) {
+  font-size: 0.95rem;
+}
