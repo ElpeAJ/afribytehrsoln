@@ -5,6 +5,7 @@
 }
 
 .links{
+  /* position: relative; */
   display: grid;
   height: 92vh;
   grid-template-columns: 12(1fr) ;
@@ -38,3 +39,34 @@
   text-decoration: none;
   color: rgb(73, 73, 73);
 }
+
+.dropdownMenu {
+  /* display: none; */
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1999;
+  width: 600px;
+  left: 500;
+  bottom: 100;
+}
+
+.dropdownMenu li{
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdownMenu li:hover {
+  background-color: rgb(232, 229, 229);
+}
+
+/* .dropdownMenu.show {
+  display: block;
+} */
+
+/* .dropdownMenuRight { */
+  /* Position the dropdown to the right of the link */
+  /* right: 0;
+  left: unset;  */
+  /* Reset default left positioning */
+/* } */
