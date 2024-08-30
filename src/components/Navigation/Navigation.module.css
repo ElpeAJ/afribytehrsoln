@@ -38,6 +38,7 @@
 .navLink{
   text-decoration: none;
   color: rgb(73, 73, 73);
+  display: block;
 }
 
 .dropdownMenu {
@@ -47,6 +48,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1999;
   width: 600px;
+  top: 20;
   left: 500;
   bottom: 100;
 }

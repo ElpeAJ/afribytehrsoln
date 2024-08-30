@@ -6,7 +6,7 @@ import { useState } from "react";
 
 
 export default function Navigation() {
-  const [isEmployeeDropdownOpen, setIsEmployeeDropdownOpen] = useState(false);
+  const [isEmployeeDropdownOpen, setIsEmployeeDropdownOpen] = useState(true);
 
   const handleEmployeeMenuHover = () => {
     setIsEmployeeDropdownOpen(!isEmployeeDropdownOpen);
