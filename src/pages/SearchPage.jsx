@@ -1,9 +1,9 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import React from "react";
 import Navigation from "../components/Navigation/Navigation";
 import Trial from "../components/Trial/Trial";
 import style from "./SearchPage.module.css";
-import { taskdetails } from "../components/taskinfo";
+// import { taskdetails } from "../components/taskinfo";
 // import { fontawesomeicons, navlinks} from "../components/navdetails";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch} from "@fortawesome/free-solid-svg-icons";
@@ -11,14 +11,14 @@ import { faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export default function SearchPage() {
     const [searchTerm, setSearchTerm] = useState('');
-  const [filteredTasks, setFilteredTasks] = useState(taskdetails);
+  // const [filteredTasks, setFilteredTasks] = useState(taskdetails);
 
-  useEffect(() => {
-    const filtered = taskdetails.filter((task) =>
-      task.username.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-    setFilteredTasks(filtered);
-  }, [searchTerm, taskdetails]);
+  // useEffect(() => {
+  //   const filtered = taskdetails.filter((task) =>
+  //     task.username.toLowerCase().includes(searchTerm.toLowerCase())
+  //   );
+  //   setFilteredTasks(filtered);
+  // }, [searchTerm, taskdetails]);
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
@@ -52,13 +52,13 @@ export default function SearchPage() {
                 <h1>What are you searching for?</h1>
                 <p>Try searching for features, people, roles, departments, email address, positions and much more!</p>
             </div>
-            <ul>
+            {/* <ul>
               {filteredTasks.map((task) => (
                 <li key={task.id}>
-                  {/* Render task details here */}
+                  {Render task details here }
                 </li>
               ))}
-            </ul>
+            </ul> */}
         </div>
         </div>
       </div>
