@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .splitscreen{
+    background-color: rgb(148, 174, 193);
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.7fr 8.3fr;
+  }
+  
+  .main{
+    margin: 10px;
+    border: 10px;
+    /* padding: 10px; */
+  }
+  
+  .maincontent{
+    margin: 3rem;
+    
+  }
+  
+  .inbox{
+    margin: 0 auto;
+    width: 55%;
+    height: 70vh;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 7px;
+    background-color: white;
+    padding: 15px 10px;
+  }
+
+  .inbox form .type{
+    width: 95%;
+    border: 2px solid rgb(137, 137, 232);
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 19px;
+  }
+
+  .inbox form .searchdiv{
+    /* background-color: pink; */
+    position: relative;
+  }
+
+  .inbox form .searchicon{
+    display: block;
+    margin: 8rem auto 0;
+    padding: 10px;
+    font-size: 5rem;
+  }
+
+  .inbox form .sub{
+    position: absolute;
+    bottom: 4%;
+    right: 41.5%;
+    opacity: 0.85;
+    color:rgb(44, 0, 0);
+    background-color: rgb(216, 234, 249);
+    padding: 2.8rem 1.8rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 48%;
+  }
+
+  .searchdiv:hover{
+    background-color: rgb(253, 249, 244);
+  }
+
+  .sub:hover{
+    cursor: pointer;
+  }
+
+  .searchtext{
+    margin-top: 2rem;
+    padding: 0 1rem;
+    line-height: 1.5;
+  }
+
+  .searchtext h1{
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .searchtext p{
+    /* font-size: 1.8rem; */
+    text-align: center;
+  }
+  

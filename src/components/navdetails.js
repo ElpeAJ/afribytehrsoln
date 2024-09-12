@@ -1,9 +1,9 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faInbox, faSearch, faPeopleGroup, faBoltLightning, faCalendar,
-  faFile, faLifeRing, faGears, faCopy,faBarsStaggered, faArchive, faRightFromBracket, faChevronRight,
-  faLocationDot, faSitemap, faBriefcase, faPeopleLine,faEllipsis,
-  faCamera
+  faFile, faLifeRing, faGears, faCopy,faBarsStaggered, faArchive, faRightFromBracket, faChevronRight, 
+  faLocationDot, faSitemap, faBriefcase, faPeopleLine,faEllipsis, faCamera, faXmark, faCheck, faChevronLeft,
+  faCartPlus
 } from "@fortawesome/free-solid-svg-icons";
 // import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 
@@ -62,6 +62,9 @@ export const fontawesomeicons = {
   greaterthan: {
     icon: <FontAwesomeIcon icon={faChevronRight} />,
   },
+  lessthan: {
+    icon: <FontAwesomeIcon icon={faChevronLeft} />,
+  },
   upcoming: {
     icon: <FontAwesomeIcon icon={faCopy} />,
   },
@@ -89,5 +92,35 @@ export const fontawesomeicons = {
   camera: {
     icon: <FontAwesomeIcon icon={faCamera} />,
   },
+  cross: {
+    icon: <FontAwesomeIcon icon={faXmark} />,
+  },
+  correct: {
+    icon: <FontAwesomeIcon icon={faCheck} />,
+  },
+  cart: {
+    icon: <FontAwesomeIcon icon={faCartPlus} />
+  }
 };
+
+export const subscriptionlinks = [
+  {
+    page: "Subscription",
+  },
+  {
+    page: "Billing information",
+  },
+  {
+    page: "Data Protection Information",
+  },
+  {
+    page: "Payment details",
+  },
+  {
+    page: "Invoices",
+  },
+  {
+    page: "Credit Notes",
+  },
+];
 

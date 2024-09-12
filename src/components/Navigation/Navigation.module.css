@@ -31,6 +31,10 @@
   background-color: white;
 }
 
+.selectedLink {
+  background-color: #fff; 
+}
+
 .fontawesome{
   color: rgb(107, 107, 107);
 }

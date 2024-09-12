@@ -34,3 +34,31 @@ export default function Inbox(){
     </div>
   );
 }
+
+// import React, { useState } from 'react';
+
+// function Inbox() {
+//   const [isInboxOpen, setIsInboxOpen] = useState(false);
+
+//   const handleInboxClick = () => {
+//     setIsInboxOpen(!isInboxOpen);
+//   };
+
+//   return (
+//     <div className="container">
+//       <nav className="navigation">
+//         <ul>
+//           <li>Home</li>
+//           <li>Profile</li>
+//           <li onClick={handleInboxClick}>Inbox</li>
+//           {/* Add more navigation links here */}
+//         </ul>
+//       </nav>
+//       <div className="content">
+//         {isInboxOpen && <div className="inbox">Inbox content here</div>}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default NavigationAndInbox;

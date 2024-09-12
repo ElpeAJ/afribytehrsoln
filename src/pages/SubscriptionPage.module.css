@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .splitscreen{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.7fr 8.3fr;
+  }
+  
+  .main{
+    margin: 10px;
+    border: 10px;
+    /* padding: 10px; */
+  }
+  
+  .maincontent{
+    margin: 3rem 1.5rem;
+  }
+  
+  .lessthan{
+    font-size: 9px;
+    color: blue;
+    margin-right: 0.5rem;
+  }
+
+  .back{
+    font-size: 16px;
+    color: blue;
+    text-decoration: none;
+    
+    margin-bottom:2rem ;
+  }
+
+  .heading{
+    margin: 0.9rem 0 2rem;
+    opacity: 0.8;
+    letter-spacing: 0.7px;
+    /* padding: 4rem 0 1rem;
+    color: rgb(102, 101, 101);
+    font-size: 1.1rem; */
+  }
+
+  .subscriptionlinks{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    text-decoration: none;
+  }
+
+  .subscriptionlink{
+    text-decoration: none;
+  }
+
+  .splitscreen2{
+    margin: 2.5rem;
+    display: grid;
+    grid-template-columns: 7fr 3fr ;
+    gap: 3rem;
+  }
+
+  /* .splitscreen2{
+    margin: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+  } */
+
+  .splitscreen2 .details{
+    /* width: 120%; */
+    max-height: 40vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    align-items: center;
+  }
+
+  .splitscreen2 .details div:nth-child(2),
+    .splitscreen2 .details div:nth-child(3) {
+    padding-top: 1.5rem;
+    border-top: 1px solid rgb(183, 179, 179);
+}
+
+.splitscreen2 .details div h2{
+  font-size: 1.8rem;
+  color: rgb(59, 59, 59);
+  margin-bottom: 0.5rem;
+  }
+
+.splitscreen2 .details div h3{
+    font-size: 1.3rem;
+    color: rgb(59, 59, 59);
+    margin-bottom: 0.5rem;
+}
+
+.splitscreen2 .details div:nth-child(2) p,
+.splitscreen2 .details div:nth-child(3)  p{
+color: rgb(108, 107, 107);
+}
+
+.details select{
+    width: 40%;
+    
+}
+
+.plansummary{
+    max-height: 63vh;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 9px;
+    padding: 2rem 2rem 0;
+    z-index: 5999;
+}
+
+.plan{
+    max-height: 60% ;
+}
+
+.plansummary .plan h3{
+    opacity: 0.7;
+}
+
+.plansummary .summary{
+    /* max-height: 60vh; */
+    /* border: 1px solid rgb(166, 166, 166); */
+    border-radius: 9px;
+    padding: 1.2rem 0rem;
+}
+
+.plansummary .summary p{
+    padding: 0.4rem 0rem;
+}
+
+.plansummary .summary p:nth-child(1){
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.plansummary .summary p:nth-child(2){
+    opacity: 0.5;
+}
+
+.plansummary .summary p:nth-child(3){
+    color: rgb(46, 113, 248);
+    font-weight: 700;
+}
+
+.cartdiv{
+    margin-top: 20px;
+}
+
+.cart{
+    font-size: 35px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 0.8rem;
+}
+
+.pick {
+    font-weight: 700;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 0.8rem;
+}
+
+.choose{
+    opacity: 0.7;
+    text-align: justify;
+}
+
+.agreement{
+    margin: 1.5rem 0;
+}
+
+.agreement p:nth-child(1){
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.agreement p:nth-child(2){
+    font-size: 14px;
+    opacity: 0.8;
+    margin-top: 1rem;
+}
+
+.agreement .cont{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.choiceplansdiv{
+    display: flex;
+    width: 70%;
+}
+
+/* .agreement .cont .button{
+    padding: 3rem;
+} */
+
+/* .plansummary .plan{
+    opacity: 0.7;
+} */
+
+  .workflowheader{
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    /* width: 100%; */
+  }
+  
+  .positionboxes {
+  margin-top: 40px;
+  display: flex;
+  gap: 1.5rem;
+  }
+  
+  .positionboxes > div {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  .positionboxes > * {
+   align-self: flex-start;
+  }
+  
+  
+  
+  
+  
