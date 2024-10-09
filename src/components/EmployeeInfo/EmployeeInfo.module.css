@@ -1,6 +1,7 @@
 /* .profilesection{} */
 
 .profile{
+  position: relative;
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1.5fr 8fr 2fr;
@@ -12,7 +13,6 @@
 }
 
 .profileimg img{
-  
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -20,11 +20,11 @@
 
 .camera{
   position: absolute;
-  bottom:1%;
-  right: 4%;
+  bottom:25%;
+  right: 6%;
   width: 50px;
   height: 50px;
-  /* padding: 10px; */
+  padding: 10px;
 }
 
 .camera i{
@@ -70,6 +70,33 @@ align-self: center;
   margin-right: 0.3rem;
 }
 
+.supervisorName{
+  text-decoration: underline;
+  color: rgb(58, 169, 234);
+}
+
+.employeelinks{
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  text-decoration: none;
+}
+
+.employeelink{
+  text-decoration: none;
+  color:black;
+  opacity: 0.7;
+}
+
+.employeelink:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.employeelink:active {
+  text-decoration: underline;
+}
+
 .other{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -83,6 +110,63 @@ align-self: center;
   justify-content: center;
   padding: 0.3rem;
   border-radius: 9px;
+}
+
+/* .dropdown {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+} */
+
+/* .dropdown-menu {
+  position: absolute;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+} */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: inline-block;
+}
+
+/* .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+} */
+
+.dropdown-menu {
+  display: none; /* Hide by default */
+  position: absolute; /* Position it absolutely */
+  top: 100%; /* Position below the toggle */
+  left: 0; /* Align to the left */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.dropdown.show .dropdown-menu {
+  display: block; /* Show when dropdown is active */
+}
+
+
+.dropdown.show .dropdown-menu {
+  display: block;
 }
 
 .fontawesome{

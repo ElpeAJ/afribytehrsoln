@@ -3,7 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse, faInbox, faSearch, faPeopleGroup, faBoltLightning, faCalendar,
   faFile, faLifeRing, faGears, faCopy,faBarsStaggered, faArchive, faRightFromBracket, faChevronRight, 
   faLocationDot, faSitemap, faBriefcase, faPeopleLine,faEllipsis, faCamera, faXmark, faCheck, faChevronLeft,
-  faCartPlus
+  faCartPlus,
+  faCity,
+  faBuilding
 } from "@fortawesome/free-solid-svg-icons";
 // import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
 
@@ -100,6 +102,12 @@ export const fontawesomeicons = {
   },
   cart: {
     icon: <FontAwesomeIcon icon={faCartPlus} />
+  },
+  core: {
+    icon: <FontAwesomeIcon icon={faBuilding} />
+  },
+  corePro: {
+    icon: <FontAwesomeIcon icon={faCity} />
   }
 };
 
@@ -121,6 +129,39 @@ export const subscriptionlinks = [
   },
   {
     page: "Credit Notes",
+  },
+];
+
+export const employeeLinks = [
+  {
+    page: "Personal info",
+  },
+  {
+    page: "Salary",
+  },
+  {
+    page: "Documents",
+  },
+  {
+    page: "Attendance",
+  },
+  {
+    page: "Absence",
+  },
+  {
+    page: "Onboarding",
+  },
+  {
+    page: "History",
+  },
+  {
+    page: "Roles",
+  },
+  {
+    page: "Notes",
+  },
+  {
+    page: "Reminders",
   },
 ];
 

@@ -1,5 +1,7 @@
 import {useState} from "react";
 import React from "react";
+// import { CButton, CModalBody, CModalTitle, CModalHeader, CModal } from "@coreui/react";
+import { CModalFooter } from "@coreui/react";
 import Navigation from "../components/Navigation/Navigation";
 import Trial from "../components/Trial/Trial";
 import style from "./SearchPage.module.css";
@@ -117,3 +119,108 @@ export default function SearchPage() {
 // }
 
 // export default SearchPage;
+
+// export default function SearchPage() {
+// const [visible, setVisible] = useState(false)
+// return (
+//   <>
+//     <CButton color="primary" onClick={() => setVisible(!visible)}>Launch demo modal</CButton>
+//     <CModal
+//       scrollable
+//       visible={visible}
+//       onClose={() => setVisible(false)}
+//       aria-labelledby="ScrollingLongContentExampleLabel2"
+//     >
+//       <CModalHeader>
+//         <CModalTitle id="ScrollingLongContentExampleLabel2">Modal title</CModalTitle>
+//       </CModalHeader>
+//       <CModalBody>
+//         <p>
+//           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+//           in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+//         </p>
+//         <p>
+//           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+//           vel augue laoreet rutrum faucibus dolor auctor.
+//         </p>
+//         <p>
+//           Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+//           scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+//           auctor fringilla.
+//         </p>
+//         <p>
+//           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+//           in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+//         </p>
+//         <p>
+//           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+//           vel augue laoreet rutrum faucibus dolor auctor.
+//         </p>
+//         <p>
+//           Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+//           scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+//           auctor fringilla.
+//         </p>
+//         <p>
+//           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+//           in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+//         </p>
+//         <p>
+//           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+//           vel augue laoreet rutrum faucibus dolor auctor.
+//         </p>
+//         <p>
+//           Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+//           scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+//           auctor fringilla.
+//         </p>
+//         <p>
+//           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+//           in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+//         </p>
+//         <p>
+//           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+//           vel augue laoreet rutrum faucibus dolor auctor.
+//         </p>
+//         <p>
+//           Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+//           scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+//           auctor fringilla.
+//         </p>
+//         <p>
+//           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+//           in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+//         </p>
+//         <p>
+//           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+//           vel augue laoreet rutrum faucibus dolor auctor.
+//         </p>
+//         <p>
+//           Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+//           scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+//           auctor fringilla.
+//         </p>
+//         <p>
+//           Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+//           in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+//         </p>
+//         <p>
+//           Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus
+//           vel augue laoreet rutrum faucibus dolor auctor.
+//         </p>
+//         <p>
+//           Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel
+//           scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus
+//           auctor fringilla.
+//         </p>
+//       </CModalBody>
+//       <CModalFooter>
+//         <CButton color="secondary" onClick={() => setVisible(false)}>
+//           Close
+//         </CButton>
+//         <CButton color="primary">Save changes</CButton>
+//       </CModalFooter>
+//     </CModal>
+//   </>
+// )
+// }

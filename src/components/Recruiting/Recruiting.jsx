@@ -1,16 +1,16 @@
 import React from "react";
 import { recruitingdetails } from "../recruitinginfo";
 import style from "./Recruiting.module.css";
+import { fontawesomeicons } from "../navdetails";
 // import Card from "../Card/Card";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { Form } from "react-router-dom";
-
-import { fontawesomeicons } from "../navdetails";
 
 export default function Recruiting() {
   return (
     <div className={style.recruit}>
       <p className={style.recruittext}>
+        <span className={style.iconOnHover}>{fontawesomeicons.briefcase.icon}</span>
         Recruiting <span>{fontawesomeicons.greaterthan.icon}</span>
       </p>
       {recruitingdetails.length === 1 ? (

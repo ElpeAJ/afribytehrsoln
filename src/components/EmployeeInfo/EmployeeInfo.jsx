@@ -1,7 +1,7 @@
 import React, {useState}from 'react';
 import style from "./EmployeeInfo.module.css";
 import {employeeprofiles} from "../employeeprofile"
-import { fontawesomeicons } from '../navdetails';
+import { employeeLinks, fontawesomeicons } from '../navdetails';
 import { Link } from "react-router-dom";
 import PublicProfile from '../PublicProfile/PublicProfile';
 import HRInfo from '../HRInformation/HRInformation';
@@ -9,6 +9,8 @@ import BankDetails from '../BankDetails/BankDetails';
 import PayrollInformation from '../PayrollInformation/PayrollInformation';
 import PersonalData from '../PersonalData/PersonalData';
 import EmergencyContact from '../EmergencyContact/EmergencyContact';
+// import '@coreui/coreui/dist/css/coreui.min.css'
+// import { CDropdown, CDropdownToggle, CDropdownMenu, CDropdownItem,} from '@coreui/react';
 
 const sections = [
   { id: "pp", title: "Public profile" },
@@ -73,7 +75,7 @@ export default function EmployeeInfo() {
             </div>
           </div>
           <div>
-            <p>Since 15/06/2024 (joined less than a month ago)</p>
+            <p>Since 15/06/2024 (joined less than a month ago). Reports to <span className={style.supervisorName}>{employeeprofiles.HRInformation.supervisorName}</span></p>
           </div>
         </div>
         <div className={style.other}>
@@ -83,12 +85,27 @@ export default function EmployeeInfo() {
           <div>
             <i className={style.fontawesome}>{fontawesomeicons.login.icon}</i>
           </div>
-          <div>
-            <i className={style.fontawesome}>
-              {fontawesomeicons.threedots.icon}
-            </i>
-          </div>
+          {/* <div> */}
+          {/* <CDropdown direction='down' className={style.dropdown}>
+              <CDropdownToggle>
+                <i className={style.fontawesome}>{fontawesomeicons.threedots.icon}</i>
+                </CDropdownToggle>
+              <CDropdownMenu>
+                <CDropdownItem href="#">Action</CDropdownItem>
+                <CDropdownItem href="#">Another action</CDropdownItem>
+                <CDropdownItem href="#">Something else here</CDropdownItem>
+              </CDropdownMenu>
+          </CDropdown> */}
+          {/* </div> */}
         </div>
+      </div>
+      
+      <div className={style.employeelinks}>
+        {employeeLinks.map((employeeLink) => (
+          <div key={employeeLink.page}>
+            <Link to={`/${employeeLink.page}`} className={style.employeelink}>{employeeLink.page}</Link>
+          </div>
+        ))}
       </div>
       <div className={style.employeeprofile}>
         <div className={style.employeeprofileleft}>

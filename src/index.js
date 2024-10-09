@@ -7,7 +7,8 @@ import InboxPage from "./pages/InboxPage";
 import SearchPage from "./pages/SearchPage";
 import EmployeesPage from "./pages/EmployeesPage";
 import AutomationsPage from "./pages/AutomationsPage";
-import SubscriptionPage from "./pages/SubscriptionPage"
+import SubscriptionPage from "./pages/SubscriptionPage";
+import SettingsPage from "./pages/SettingsPage";
 import reportWebVitals from "./setup/reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // import { SearchProvider } from './components/Context/SearchContext'; // Assuming SearchContext.js is in a folder named 'context'
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "subscription",
     element: <SubscriptionPage />,
+  },
+  {
+    path: "settings",
+    element: <SettingsPage />,
   },
   
 ]);

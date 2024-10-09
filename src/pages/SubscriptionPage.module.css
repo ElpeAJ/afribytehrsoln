@@ -49,9 +49,20 @@
     gap: 3rem;
     text-decoration: none;
   }
-
-  .subscriptionlink{
+  
+  .subscriptionlink {
     text-decoration: none;
+    color: #000;
+    transition: border-bottom 0.3s ease;
+  }
+  
+  .subscriptionlink:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  .subscriptionlink:active {
+    text-decoration: underline;
   }
 
   .splitscreen2{
@@ -100,16 +111,19 @@ color: rgb(108, 107, 107);
 }
 
 .details select{
-    width: 40%;
-    
+    width: 40%; 
 }
 
 .plansummary{
+    width: 20%;
     max-height: 63vh;
     border: 1px solid rgb(166, 166, 166);
     border-radius: 9px;
     padding: 2rem 2rem 0;
     z-index: 5999;
+    position: fixed;
+    /* top: 20px; */
+    right: 30px;
 }
 
 .plan{
@@ -151,7 +165,7 @@ color: rgb(108, 107, 107);
 
 .cart{
     font-size: 35px;
-    text-align: center;
+    /* text-align: center; */
     opacity: 0.5;
     margin-bottom: 0.8rem;
 }
@@ -191,21 +205,123 @@ color: rgb(108, 107, 107);
 .choiceplansdiv{
     display: flex;
     width: 70%;
+    gap: 1rem;
 }
 
-/* .agreement .cont .button{
-    padding: 3rem;
+/* .choiceplan:nth-child(1){
+  background-color: rgb(210, 72, 72);
 } */
 
-/* .plansummary .plan{
-    opacity: 0.7;
+.choiceplan{
+  padding: 1rem;
+  background-color: rgb(241, 241, 241);
+  width: 41%;
+}
+
+.choiceplan:hover{
+  background-color: rgb(228, 251, 255);
+  cursor: pointer;
+}
+
+.choiceplan h4{
+  margin-top: 2rem;
+}
+
+.choiceplan p, .choiceplan ul{
+  font-size: 0.85rem;
+}
+
+.choiceplan ul {
+  list-style-type: none; /* Disable default bullets */
+  padding-left: 20px; /* Add space between bullet and text */
+}
+
+.choiceplan ul li::before {
+  content: "•"; /* Add a bullet point */
+  color: black; /* Bullet color */
+  font-size: 20px; /* Bullet size */
+  display: inline-block; 
+  width: 1em; /* Space for the bullet */
+  /* margin-left: -1.5em;  */
+  /* Position bullet outside */
+}
+
+.costrange{
+  margin-top: 3rem;
+}
+
+.costrange p{
+  text-align: center;
+}
+
+/* table{
+  margin-top: 2rem;
+  background-color: aqua;
 } */
 
-  .workflowheader{
+.table{
+  width: 64%;
+  /* max-height: 63vh; */
+  /* border: 1px solid rgb(166, 166, 166); */
+  border-radius: 9px;
+  padding: 2rem 0;
+}
+
+.styledtable {
+  width: 100%; /* Full width of the container */
+  border-collapse: collapse; /* Removes double borders */
+  margin: 25px 0; 
+  font-size: 18px; 
+  font-family: Arial, sans-serif;
+  text-align: center; 
+}
+
+.styledtable thead tr {
+  background-color: #009879; 
+  padding: 2rem 0;
+  color: #ffffff; 
+  text-align: left;
+  font-weight: bold;
+}
+
+/* .styledtable thead{
+  padding: 3rem 0;
+} */
+
+.styledtable th, .styledtable td {
+  padding: 12px 15px; /* Padding inside cells */
+  border: 1px solid #dddddd; /* Border for table cells */
+}
+
+.styledtable tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styledtable tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3; /* Alternating row colors */
+}
+
+.styledtable tbody tr:hover {
+  background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.styledtable tbody tr:last-of-type {
+  border-bottom: 2px solid #009879; /* Bold bottom border */
+}
+
+.loadMoreButton{
+  display: block;
+  margin: 0 auto;
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+  color: rgb(85, 85, 252);
+}
+
+/* .workflowheader{
     display: grid;
     grid-template-columns: 6fr 4fr;
-    /* width: 100%; */
-  }
+}
   
   .positionboxes {
   margin-top: 40px;
@@ -222,7 +338,7 @@ color: rgb(108, 107, 107);
   
   .positionboxes > * {
    align-self: flex-start;
-  }
+  } */
   
   
   

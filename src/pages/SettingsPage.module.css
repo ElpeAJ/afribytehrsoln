@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  .splitscreen{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.7fr 8.3fr;
+  }
+  
+  .main{
+    margin: 10px;
+    border: 10px;
+    /* padding: 10px; */
+  }
+  
+  .maincontent{
+    margin: 3rem;
+  }
+
+  .settingstext{
+    opacity: 0.7;
+    margin: 5px 0 2rem;
+    font-size: 35px;
+    font-weight: 600;
+  }
+
+  .mainDiv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .eachDiv{
+    border: 1px solid rgb(199, 199, 199);
+    width: 29%;
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.7;
+  }
+
+  .eachDiv h3{
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+
+  .eachDiv li{
+    margin-bottom: 1rem;
+  }
+  
+  /* .inbox{
+    width: 70%;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 7px;
+    padding: 15px 30px;
+  }
+  
+  .inboxtext{
+    opacity: 0.7;
+    margin: 5px 0;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  
+  .select{
+    width: 100%;
+    font-size: 29px;
+    margin: 20px 0;
+  }
+
+  .select option{
+    padding: 10px;
+  }
+  
+  .gridbox{
+    display: grid;
+    gap: 1.5rem; 
+    max-height: 60vh;
+  }
+  
+  .inboxitems{
+    display: grid;
+    grid-template-columns: 1fr 8fr 0.5fr;
+    border: 1px solid rgb(171, 171, 171);
+    border-radius: 7px;
+    padding: 1rem;
+  
+  }
+  
+  .infotext{
+    display: grid;
+    grid-template-rows: 2(1fr);
+  
+  }
+  
+  .inboxitems img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .xmark{
+    color: rgb(87, 87, 249);
+    font-size: 19px;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  .xmark:hover{
+    background-color:rgb(87, 87, 249) ;
+    color: white;
+  }
+  
+  
+  
+  
+   */

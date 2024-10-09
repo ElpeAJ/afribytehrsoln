@@ -6,8 +6,38 @@
 }
 
 .inboxtext{
+  display: inline-block;
   opacity: 0.7;
   margin: 5px 0;
+  position: relative; /* Make relative for positioning the hover icon */
+  padding-left: 25px;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.black{
+  color: black;
+  text-decoration: none;
+}
+
+/* Style for the icon that appears on hover */
+.iconOnHover {
+  position: absolute;
+  left: -25px; /* Position it on the left of the text */
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the icon */
+  opacity: 0; /* Hidden initially */
+  transition: opacity 0.3s ease; /* Smooth appearance */
+}
+
+/* On hover, show the icon and change the background */
+.inboxtext:hover {
+  background-color: rgba(176, 229, 238, 0.7); /* Set the hover background */
+  cursor: pointer;
+}
+
+.inboxtext:hover .iconOnHover {
+  left: 0; /* Slide in the icon to the visible position */
+  opacity: 1; /* Show the icon on hover */
 }
 
 .inboxtext span{

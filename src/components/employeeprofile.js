@@ -31,6 +31,7 @@ export const employeeprofiles =
       //     "https://images.unsplash.com/photo-1615751072497-5f5169febe17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80",
       //   supervisorName: "Laura Erdmann",
       // },
+      supervisorName: "Laura Erdmann",
       "Length Probation": "6 months",
       "Weekly hours": 40,
       "Children ℹ️": "Not set",
