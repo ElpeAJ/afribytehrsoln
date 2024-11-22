@@ -3,7 +3,7 @@ import Navigation from "../components/Navigation/Navigation";
 import Trial from "../components/Trial/Trial";
 import style from "./EmployeeListPage.module.css";
 import Button from "../components/Button/Button";
-import { allemployeesprofile } from "../components/employeeprofile";
+// import { allemployeesprofile } from "../components/employeeprofile";
 // import EmployeeInfo from "../components/EmployeeInfo/EmployeeInfo";
 import { fontawesomeicons} from "../components/navdetails";
 // import { employeeprofiles } from "../components/employeeprofile";
