@@ -1,7 +1,7 @@
 import {useState} from "react";
 import React from "react";
 // import { CButton, CModalBody, CModalTitle, CModalHeader, CModal } from "@coreui/react";
-import { CModalFooter } from "@coreui/react";
+// import { CModalFooter } from "@coreui/react";
 import Navigation from "../components/Navigation/Navigation";
 import Trial from "../components/Trial/Trial";
 import style from "./SearchPage.module.css";
