@@ -3,6 +3,12 @@
     padding: 0;
     /* overflow-x: hidden; */
   }
+
+  /* CoreUI's dropdown menu */
+  /* .c-dropdown-menu {
+    position: absolute !important;
+    z-index: 1050 !important;
+  } */
   
   .splitscreen{
     width: 100vw;
@@ -20,6 +26,11 @@
     margin: 0 1.5rem;
     /* position: fixed;
     width: 78%; */
+  }
+
+  .splitscreen, .main, .maincontent {
+    overflow: visible !important;
+    position: relative;
   }
 
   .emptitle{

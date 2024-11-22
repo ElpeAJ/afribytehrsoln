@@ -163,38 +163,67 @@
 // }
 
 import React, { useState } from 'react';
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import style from "./Navigation.module.css";
 import { navlinks } from '../navdetails';
 import { taskdetails } from "../taskinfo";
-// import { fontawesomeicons } from '../navdetails';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { CButton, CModalBody, CModalTitle, CModalHeader, CModal, CModalFooter } from "@coreui/react";
+import { CButton, 
+  CModalBody, CModalTitle, CModalHeader, 
+  CModal, CModalFooter, CDropdown,
+  //  CCollapse, CNav, CNavItem,CNavLink, 
+  CDropdownItem, CDropdownMenu, CDropdownToggle} from "@coreui/react";
 import '@coreui/coreui/dist/css/coreui.min.css'; // Import CoreUI CSS
 
 export default function Navigation() {
   const [selectedLink, setSelectedLink] = useState(navlinks[0].page);
-  const [isEmployeeDropdownOpen, setIsEmployeeDropdownOpen] = useState(true);
+  // const [isEmployeeDropdownOpen, setIsEmployeeDropdownOpen] = useState(true);
 
   // Separate state for each modal visibility
   const [isSearchModalVisible, setIsSearchModalVisible] = useState(false);
   const [isInboxModalVisible, setIsInboxModalVisible] = useState(false);
+  // const [visible, setVisible] = useState(false); // State for modal visibility
+
 
   const handleLinkClick = (page) => {
     setSelectedLink(page);
   };
 
-  const handleEmployeeMenuHover = () => {
-    setIsEmployeeDropdownOpen(!isEmployeeDropdownOpen);
-  };
+  // const handleEmployeeMenuHover = () => {
+  //   setIsEmployeeDropdownOpen(!isEmployeeDropdownOpen);
+  // };
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
   const [searchTerm, setSearchTerm] = useState('');
+
+  const EmployeeDropdown = () => {
+    return (
+      <div style={{position:"relative"}}>
+      <CDropdown>
+        <CDropdownToggle style={{ backgroundcolor: "rgb(216, 242, 250)", color: "black", border:"none", padding: 0}}>
+          employees
+        </CDropdownToggle>
+        {ReactDOM.createPortal(
+        <CDropdownMenu>
+          {/* <CDropdownItem href="#">Employee List</CDropdownItem>
+          <CDropdownItem href="#">Org Chart</CDropdownItem>
+          <CDropdownItem href="#">Timeline View</CDropdownItem> */}
+          <CDropdownItem className={style.dropdownitem}> <Link to="/employee-list">Employee List</Link> </CDropdownItem>
+          <CDropdownItem className={style.dropdownitem}> <Link to="">Org Chart</Link> </CDropdownItem>
+          <CDropdownItem className={style.dropdownitem}> <Link to="">Timeline View</Link> </CDropdownItem>
+        </CDropdownMenu>,
+          document.body
+          )}
+      </CDropdown>
+      </div>
+    );
+  };
 
   return (
     <div className={style.links}>
@@ -206,21 +235,24 @@ export default function Navigation() {
         >
           {navlink.icon && <i className={style.fontawesome}>{navlink.icon}</i>}
           {navlink.page === "employees" ? (
-            <>
-              <Link
-                to={`/${navlink.page}`}
-                className={style.navLink}
-                onMouseEnter={handleEmployeeMenuHover}
-                onMouseLeave={handleEmployeeMenuHover}
-              >
-                {navlink.page}
-              </Link>
-              {isEmployeeDropdownOpen && (
-                <ul className={`${style.dropdownMenu} ${isEmployeeDropdownOpen ? "show" : ""}`}>
-                  {/* Dropdown options can be added here */}
-                </ul>
-              )}
-            </>
+            // <>
+            //   <Link
+            //     to={`/${navlink.page}`}
+            //     className={style.navLink}
+            //     onMouseEnter={handleEmployeeMenuHover}
+            //     onMouseLeave={handleEmployeeMenuHover}
+            //   >
+            //     {navlink.page}
+            //   </Link>
+            //   {isEmployeeDropdownOpen && (
+            //     <ul className={`${style.dropdownMenu} ${isEmployeeDropdownOpen ? "show" : ""}`}>
+            //       <li>All Employees</li>
+            //       <li>All Employees</li>
+            //       <li>All Employees</li>
+            //     </ul>
+            //   )}
+            // </>
+            <EmployeeDropdown/>
           ) : navlink.page === "search" ? (
             <CButton onClick={() => setIsSearchModalVisible(true)} className={style.navLink}>{navlink.page}</CButton>
           ) : navlink.page === "inbox" ? (
@@ -232,7 +264,6 @@ export default function Navigation() {
           )}
         </div>
       ))}
-
       {/* Search Modal */}
       <CModal visible={isSearchModalVisible} onClose={() => setIsSearchModalVisible(false)}>
         <CModalHeader onClose={() => setIsSearchModalVisible(false)}>

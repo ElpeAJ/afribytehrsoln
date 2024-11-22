@@ -1,4 +1,6 @@
 import React from "react";
+import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation/Navigation";
 import Trial from "../components/Trial/Trial";
 import style from "./EmployeeListPage.module.css";
@@ -32,23 +34,29 @@ export default function EmployeeListPage() {
             <div></div>
             <div></div>
             <div>
-            <Button linksto="/" name="Add Employee" color="blue" />
+            
+            <Link to="/addnewemployee"><Button name="Add Employee" color="blue" linksto="/addnewemployee" /></Link> 
+            {/* <button><Link to="/addnewemployee">Add Employee</Link> </button> */}
+            {/* <Link to="/addnewemployee" className={style.addEmployeeButton}>Add Employee</Link> */}
             </div>
           </div>
-          <div>
-            {['status', 'Employement Type', 'Office', 'Department', 'Team', 'Position'].map((color, index) => (
-              <CDropdown variant="btn-group" key={index}>
-                <CButton color={color}>{color}</CButton>
-                <CDropdownToggle color={color} split />
-                <CDropdownMenu>
+          <div style={{ position: "relative" }}>
+            {['status', 'Employment Type', 'Office', 'Department', 'Team', 'Position'].map((text, index) => (
+              <CDropdown variant="btn-group" key={index} style={{ position:"relative"}}>
+                <CButton style={{ backgroundColor: "white", color: "black", }}>{text}</CButton>
+                <CDropdownToggle style={{ backgroundColor: "white", color: "black" }} />
+                {ReactDOM.createPortal(
+                <CDropdownMenu  style={{zIndex: 5000}}>
                   <CDropdownItem href="#">Action</CDropdownItem>
                   <CDropdownItem href="#">Another action</CDropdownItem>
-                  <CDropdownItem href="#">Something else here</CDropdownItem>
                   <CDropdownDivider />
                   <CDropdownItem href="#">Separated link</CDropdownItem>
-                </CDropdownMenu>
+                </CDropdownMenu>,
+                 document.body
+                )}
               </CDropdown>
             ))}
+
           </div>
           <div>
             <table style={{ width: "100%", borderCollapse: "collapse" , overflowX:"scroll", fontSize:"0.85rem"}}>

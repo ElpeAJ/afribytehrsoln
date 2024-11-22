@@ -68,7 +68,7 @@ export default function AddNewEmployeePage() {
             </form>
             <Button linksto="/" name="Add Employee" color="blue" />
           </div>
-          <div>
+          {/* <div>
             <table style={{ width: "100%", borderCollapse: "collapse" , overflowX:"scroll", fontSize:"0.85rem"}}>
               <thead>
                 <tr style={{ backgroundColor: "#f2f2f2" }}>
@@ -118,7 +118,7 @@ export default function AddNewEmployeePage() {
                 ))}
               </tbody>
             </table>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
